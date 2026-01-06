@@ -1,0 +1,173 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Current File",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${file}",
+            "buildFlags": "-gcflags=all=-N -l",
+            "showLog": false
+        },
+        {
+            "name": "Debug Current Folder",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${fileDirname}",
+            "buildFlags": "-gcflags=all=-N -l",
+            "showLog": false
+        },
+        {
+            "name": "Debug Module 01 (main-and-entrypoint)",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/01-main-and-entrypoint",
+            "buildFlags": "-gcflags=all=-N -l"
+        },
+        {
+            "name": "Debug Module 02 (variables-and-scope)",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/02-variables-and-scope",
+            "buildFlags": "-gcflags=all=-N -l"
+        },
+        {
+            "name": "Debug Module 03 (functions-and-call-stack)",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/03-functions-and-call-stack",
+            "buildFlags": "-gcflags=all=-N -l"
+        },
+        {
+            "name": "Debug Module 04 (pointers-and-memory)",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/04-pointers-and-memory",
+            "buildFlags": "-gcflags=all=-N -l"
+        },
+        {
+            "name": "Debug Module 05 (slices-maps-and-aliasing)",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/05-slices-maps-and-aliasing",
+            "buildFlags": "-gcflags=all=-N -l"
+        },
+        {
+            "name": "Debug Module 06 (structs-and-methods)",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/06-structs-and-methods",
+            "buildFlags": "-gcflags=all=-N -l"
+        },
+        {
+            "name": "Debug Module 07 (interfaces-and-dynamic-dispatch)",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/07-interfaces-and-dynamic-dispatch",
+            "buildFlags": "-gcflags=all=-N -l"
+        },
+        {
+            "name": "Debug Module 08 (errors-and-defer)",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/08-errors-and-defer",
+            "buildFlags": "-gcflags=all=-N -l"
+        },
+        {
+            "name": "Debug Module 09 (goroutines-basics)",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/09-goroutines-basics",
+            "buildFlags": "-gcflags=all=-N -l"
+        },
+        {
+            "name": "Debug Module 10 (channels-and-blocking)",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/10-channels-and-blocking",
+            "buildFlags": "-gcflags=all=-N -l"
+        },
+        {
+            "name": "Debug Module 11 (data-races-and-sync)",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/11-data-races-and-sync",
+            "buildFlags": "-gcflags=all=-N -l"
+        },
+        {
+            "name": "Debug Module 12 (compiler-optimizations)",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/12-compiler-optimizations",
+            "buildFlags": "-gcflags=all=-N -l"
+        },
+        {
+            "name": "Debug Tests in Current File",
+            "type": "go",
+            "request": "launch",
+            "mode": "test",
+            "program": "${file}",
+            "buildFlags": "-gcflags=all=-N -l"
+        },
+        {
+            "name": "Debug Tests in Current Folder",
+            "type": "go",
+            "request": "launch",
+            "mode": "test",
+            "program": "${fileDirname}",
+            "buildFlags": "-gcflags=all=-N -l"
+        },
+        {
+            "name": "Debug Module 13 (debugging-tests)",
+            "type": "go",
+            "request": "launch",
+            "mode": "test",
+            "program": "${workspaceFolder}/13-debugging-tests",
+            "buildFlags": "-gcflags=all=-N -l"
+        },
+        {
+            "name": "Debug with Optimizations (Compare Mode)",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${fileDirname}",
+            "buildFlags": "",
+            "showLog": false,
+            "trace": "verbose"
+        },
+        {
+            "name": "Debug with Conditional Breakpoint Example",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${fileDirname}",
+            "buildFlags": "-gcflags=all=-N -l",
+            "showLog": false,
+            "stopOnEntry": false
+        }
+        // Uncomment and configure for remote debugging:
+        // {
+        //     "name": "Connect to Remote Delve",
+        //     "type": "go",
+        //     "request": "attach",
+        //     "mode": "remote",
+        //     "remotePath": "${workspaceFolder}",
+        //     "port": 2345,
+        //     "host": "127.0.0.1"
+        // }
+    ]
+}

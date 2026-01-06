@@ -1,0 +1,55 @@
+{
+    // Go extension configuration
+    "go.useLanguageServer": true,
+    "go.toolsManagement.autoUpdate": true,
+
+    // Delve debugger configuration
+    "go.delveConfig": {
+        "dlvLoadConfig": {
+            "followPointers": true,
+            "maxVariableRecurse": 3,
+            "maxStringLen": 400,
+            "maxArrayValues": 64,
+            "maxStructFields": -1
+        },
+        "apiVersion": 2,
+        "showGlobalVariables": true,
+        "showLog": false,
+        "logOutput": "debugger",
+        "hideSystemGoroutines": false
+    },
+
+    // Debug console preferences
+    "debug.console.fontSize": 13,
+    "debug.console.lineHeight": 18,
+    "debug.internalConsoleOptions": "openOnSessionStart",
+    "debug.showBreakpointsInOverviewRuler": true,
+    "debug.showInlineBreakpointCandidates": true,
+
+    // Always build with optimizations disabled for learning
+    "go.buildFlags": [
+        "-gcflags=all=-N -l"
+    ],
+
+    // Test configuration
+    "go.testFlags": [
+        "-v"
+    ],
+
+    // Show all goroutines (crucial for goroutine debugging modules)
+    "go.debugAdapter": "dlv-dap",
+
+    // Editor settings for better debugging experience
+    "editor.codeLens": true,
+    "editor.rulers": [80, 120],
+
+    // File associations
+    "files.associations": {
+        "*.go": "go"
+    },
+
+    // Exclude build artifacts from file explorer
+    "files.exclude": {
+        "**/__debug_bin": true
+    }
+}

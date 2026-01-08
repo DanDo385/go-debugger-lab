@@ -7,7 +7,7 @@
             "request": "launch",
             "mode": "auto",
             "program": "${file}",
-            "buildFlags": "-gcflags=all=-N -l",
+            "buildFlags": "-gcflags=\"all=-N -l\"",
             "showLog": false
         },
         {
@@ -16,7 +16,7 @@
             "request": "launch",
             "mode": "debug",
             "program": "${fileDirname}",
-            "buildFlags": "-gcflags=all=-N -l",
+            "buildFlags": "-gcflags=\"all=-N -l\"",
             "showLog": false
         },
         {
@@ -25,7 +25,7 @@
             "request": "launch",
             "mode": "debug",
             "program": "${workspaceFolder}/01-main-and-entrypoint",
-            "buildFlags": "-gcflags=all=-N -l"
+            "buildFlags": "-gcflags=\"all=-N -l\""
         },
         {
             "name": "Debug Module 02 (variables-and-scope)",
@@ -33,7 +33,7 @@
             "request": "launch",
             "mode": "debug",
             "program": "${workspaceFolder}/02-variables-and-scope",
-            "buildFlags": "-gcflags=all=-N -l"
+            "buildFlags": "-gcflags=\"all=-N -l\""
         },
         {
             "name": "Debug Module 03 (functions-and-call-stack)",
@@ -41,7 +41,7 @@
             "request": "launch",
             "mode": "debug",
             "program": "${workspaceFolder}/03-functions-and-call-stack",
-            "buildFlags": "-gcflags=all=-N -l"
+            "buildFlags": "-gcflags=\"all=-N -l\""
         },
         {
             "name": "Debug Module 04 (pointers-and-memory)",
@@ -49,7 +49,7 @@
             "request": "launch",
             "mode": "debug",
             "program": "${workspaceFolder}/04-pointers-and-memory",
-            "buildFlags": "-gcflags=all=-N -l"
+            "buildFlags": "-gcflags=\"all=-N -l\""
         },
         {
             "name": "Debug Module 05 (slices-maps-and-aliasing)",
@@ -57,7 +57,7 @@
             "request": "launch",
             "mode": "debug",
             "program": "${workspaceFolder}/05-slices-maps-and-aliasing",
-            "buildFlags": "-gcflags=all=-N -l"
+            "buildFlags": "-gcflags=\"all=-N -l\""
         },
         {
             "name": "Debug Module 06 (structs-and-methods)",
@@ -65,7 +65,7 @@
             "request": "launch",
             "mode": "debug",
             "program": "${workspaceFolder}/06-structs-and-methods",
-            "buildFlags": "-gcflags=all=-N -l"
+            "buildFlags": "-gcflags=\"all=-N -l\""
         },
         {
             "name": "Debug Module 07 (interfaces-and-dynamic-dispatch)",
@@ -73,7 +73,7 @@
             "request": "launch",
             "mode": "debug",
             "program": "${workspaceFolder}/07-interfaces-and-dynamic-dispatch",
-            "buildFlags": "-gcflags=all=-N -l"
+            "buildFlags": "-gcflags=\"all=-N -l\""
         },
         {
             "name": "Debug Module 08 (errors-and-defer)",
@@ -81,7 +81,7 @@
             "request": "launch",
             "mode": "debug",
             "program": "${workspaceFolder}/08-errors-and-defer",
-            "buildFlags": "-gcflags=all=-N -l"
+            "buildFlags": "-gcflags=\"all=-N -l\""
         },
         {
             "name": "Debug Module 09 (goroutines-basics)",
@@ -89,7 +89,7 @@
             "request": "launch",
             "mode": "debug",
             "program": "${workspaceFolder}/09-goroutines-basics",
-            "buildFlags": "-gcflags=all=-N -l"
+            "buildFlags": "-gcflags=\"all=-N -l\""
         },
         {
             "name": "Debug Module 10 (channels-and-blocking)",
@@ -97,7 +97,7 @@
             "request": "launch",
             "mode": "debug",
             "program": "${workspaceFolder}/10-channels-and-blocking",
-            "buildFlags": "-gcflags=all=-N -l"
+            "buildFlags": "-gcflags=\"all=-N -l\""
         },
         {
             "name": "Debug Module 11 (data-races-and-sync)",
@@ -105,7 +105,7 @@
             "request": "launch",
             "mode": "debug",
             "program": "${workspaceFolder}/11-data-races-and-sync",
-            "buildFlags": "-gcflags=all=-N -l"
+            "buildFlags": "-gcflags=\"all=-N -l\""
         },
         {
             "name": "Debug Module 12 (compiler-optimizations)",
@@ -113,7 +113,7 @@
             "request": "launch",
             "mode": "debug",
             "program": "${workspaceFolder}/12-compiler-optimizations",
-            "buildFlags": "-gcflags=all=-N -l"
+            "buildFlags": "-gcflags=\"all=-N -l\""
         },
         {
             "name": "Debug Tests in Current File",
@@ -121,7 +121,7 @@
             "request": "launch",
             "mode": "test",
             "program": "${file}",
-            "buildFlags": "-gcflags=all=-N -l"
+            "buildFlags": "-gcflags=\"all=-N -l\""
         },
         {
             "name": "Debug Tests in Current Folder",
@@ -129,7 +129,7 @@
             "request": "launch",
             "mode": "test",
             "program": "${fileDirname}",
-            "buildFlags": "-gcflags=all=-N -l"
+            "buildFlags": "-gcflags=\"all=-N -l\""
         },
         {
             "name": "Debug Module 13 (debugging-tests)",
@@ -137,7 +137,7 @@
             "request": "launch",
             "mode": "test",
             "program": "${workspaceFolder}/13-debugging-tests",
-            "buildFlags": "-gcflags=all=-N -l"
+            "buildFlags": "-gcflags=\"all=-N -l\""
         },
         {
             "name": "Debug with Optimizations (Compare Mode)",
@@ -155,7 +155,7 @@
             "request": "launch",
             "mode": "debug",
             "program": "${fileDirname}",
-            "buildFlags": "-gcflags=all=-N -l",
+            "buildFlags": "-gcflags=\"all=-N -l\"",
             "showLog": false,
             "stopOnEntry": false
         }

@@ -1,3 +1,3 @@
 module debugger-lab/04-pointers-and-memory
 
-go 1.24.7
+go 1.25

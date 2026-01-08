@@ -1,3 +1,3 @@
 module debugger-lab/02-variables-and-scope
 
-go 1.24.7
+go 1.25

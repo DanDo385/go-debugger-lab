@@ -14,7 +14,8 @@ Execution does not start at `main()`. You'll observe package initialization, `in
 Set breakpoints at:
 1. **Line 12** — Inside `init()`
 2. **Line 18** — Start of `main()`
-3. **Line 27** — Where `os.Args` is inspected
+3. **Line 25** — Where `os.Args` is inspected (before the `fmt.Println` that uses it)
+4. **Line 40** — Right before `main()` exits
 
 ### Step 2: Start Debugging
 - Open "Run and Debug" panel (`Ctrl+Shift+D` / `Cmd+Shift+D`)
@@ -36,11 +37,19 @@ Press `F5` (Continue) to jump to the next breakpoint in `main()`.
 - 👀 **Look at `globalCounter`** — it's already `100` because `init()` already ran
 
 ### Step 5: Inspect Arguments
-Press `F5` again to reach the `os.Args` breakpoint.
-- Expand `os.Args` in the **Variables** panel
+Press `F5` again to reach the `os.Args` breakpoint (line 25).
+- Use the **Watch** panel to add `os.Args` (package-level variables don't always appear in Variables panel)
+- Expand `os.Args` to see its contents
 - Notice `os.Args[0]` is the program path
+- Press `F10` to execute line 26 and see the output
 
-### Step 6: Experiment (Optional)
+### Step 6: Final Breakpoint
+Press `F5` again to reach the final breakpoint at line 40.
+- This is right before `main()` finishes
+- Check the **Call Stack** — you're still in `main.main()`
+- Press `F10` to execute the final `fmt.Println` and watch the program exit
+
+### Step 7: Experiment (Optional)
 Stop debugging and configure launch args:
 1. Open `.vscode/launch.json`
 2. Find the "Debug Module 01" configuration

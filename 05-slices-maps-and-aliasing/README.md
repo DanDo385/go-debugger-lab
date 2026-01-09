@@ -38,7 +38,7 @@ Press `F5` to reach line 48.
 Set breakpoints at:
 1. **Line 59** — Before calling `modifySlice`
 2. **Line 8** — Inside `modifySlice`
-3. **Line 63** — After `modifySlice` returns
+3. **Line 64** — After `modifySlice` returns
 
 Continue to line 59.
 - `nums` is `[10, 20, 30]`
@@ -54,14 +54,14 @@ Press `F10` to execute `s[0] = 999`.
 ### Step 3: Append and Capacity
 Set breakpoints at:
 1. **Line 69** — After creating `small`
-2. **Line 73** — Before calling `appendToSlice` (not reassigning)
+2. **Line 74** — Before calling `appendToSlice` (not reassigning)
 3. **Line 20** — Inside `appendToSlice`
 
 Continue to line 69.
 - `small` is `[1, 2]`
 - Expand it: `len=2, cap=2` (full capacity)
 
-Press `F11` at line 73 to step into `appendToSlice`.
+Press `F11` at line 74 to step into `appendToSlice`.
 - At line 21, `append` is called
 - Because capacity is full, `append` creates a **new backing array**
 - Press `F10` to execute the append
@@ -72,17 +72,17 @@ Press `Shift+F11` to return to `main`.
 - Why? The function modified its local slice header, not `main`'s
 - The return value was ignored
 
-Press `F5` to reach the reassignment line (line 79).
+Press `F5` to reach the reassignment line (line 82).
 - This time, we capture the return value
 - Now `small` is updated
 
 ### Step 4: Map Mutation
 Set breakpoints at:
-1. **Line 84** — Before calling `modifyMap`
+1. **Line 87** — Before calling `modifyMap`
 2. **Line 28** — Inside `modifyMap`
-3. **Line 89** — After `modifyMap` returns
+3. **Line 93** — After `modifyMap` returns
 
-Continue to line 84.
+Continue to line 87.
 - `m` is `{"key": 42}`
 
 Press `F11` to step into `modifyMap`.
@@ -95,14 +95,14 @@ Press `F10` to execute `m["key"] = 999`.
 
 ### Step 5: Copy vs Alias
 Set breakpoints at:
-1. **Line 94** — After creating `src`, `alias`, and `cpy`
-2. **Line 104** — After modifying `src[0]`
+1. **Line 98** — After creating `src`, `alias`, and `cpy`
+2. **Line 108** — After modifying `src[0]`
 
-Continue to line 94.
+Continue to line 98.
 - `alias` and `src` point to the **same backing array**
 - `cpy` is a **true copy** with a different backing array
 
-Press `F5` to reach line 104.
+Press `F5` to reach line 108.
 - `src[0]` was changed to `999`
 - 👀 **Check all three slices:**
   - `src`: `[999, 2, 3]`
